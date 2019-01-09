@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+    <title>Fullstack test</title>
+
+    <style>
+        .form-control.is-invalid, .was-validated .form-control:invalid{
+            background-image: none;
+        }
+    </style>
+
+</head>
+<body>
+<div class="container mt-5">
+    <h1 class="text-center">Validation</h1>
+    <form name="fullstack" class="mt-5">
+        <!--First name-->
+        <div class="form-group row">
+            <label for="inputFirstName" class="col-sm-2 col-form-label">First name *</label>
+            <div class="col-sm-10">
+                <input type="text" name="first-name" class="form-control" data-validation="required text" id="inputFirstName" placeholder="First name">
+                <div class="invalid-feedback"></div>
+            </div>
+        </div>
+        <!--Last name-->
+        <div class="form-group row">
+            <label for="inputLastName" class="col-sm-2 col-form-label">Last name *</label>
+            <div class="col-sm-10">
+                <input type="text" name="last-name" class="form-control" data-validation="required text" id="inputLastName" placeholder="Last name">
+                <div class="invalid-feedback"></div>
+            </div>
+        </div>
+        <!--Birthday-->
+        <div class="form-group row">
+            <label for="inputBirthday" class="col-sm-2 col-form-label">Birthday *</label>
+            <div class="col-sm-10">
+                <input type="date" name="date" class="form-control" data-validation="required" id="inputBirthday">
+                <div class="invalid-feedback"></div>
+            </div>
+        </div>
+        <!--Gender-->
+        <div class="form-group row">
+            <legend class="col-sm-2 col-form-label">Gender *</legend>
+            <div class="col-sm-10">
+                <div class="form-check form-check-inline">
+                    <input name="gender" class="form-check-input" type="radio" id="gridRadios1">
+                    <label class="form-check-label" for="gridRadios1">Male</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input name="gender" class="form-check-input" type="radio" id="gridRadios2">
+                    <label class="form-check-label" for="gridRadios2">Female</label>
+                </div>
+                <div class="invalid-feedback gender">This field is required</div>
+            </div>
+        </div>
+        <!--Country-->
+        <div class="form-group row">
+            <label for="inputCountry" class="col-sm-2 col-form-label">Country *</label>
+            <div class="col-sm-10">
+                <select name="select" id="inputCountry" class="form-control" data-validation="required">
+                    <option></option>
+                    <option value="1">Ukraine</option>
+                    <option value="2">Germany</option>
+                    <option value="3">USA</option>
+                </select>
+                <div class="invalid-feedback gender"></div>
+            </div>
+        </div>
+        <!--Email-->
+        <div class="form-group row">
+            <label for="inputEmail3" class="col-sm-2 col-form-label">Email *</label>
+            <div class="col-sm-10">
+                <input type="email" name="email" class="form-control" data-validation="required email" id="inputEmail3" placeholder="Email">
+                <div class="invalid-feedback"></div>
+            </div>
+        </div>
+        <!--Password-->
+        <div class="form-group row">
+            <label for="inputPassword3" class="col-sm-2 col-form-label">Password *</label>
+            <div class="col-sm-10">
+                <input type="password" name="password" class="form-control" data-validation="required" id="inputPassword3" placeholder="Password">
+                <div class="invalid-feedback"></div>
+            </div>
+        </div>
+        <!--Address-->
+        <div class="form-group row">
+            <label for="inputAddress" class="col-sm-2 col-form-label">Address *</label>
+            <div class="col-sm-10">
+                <input type="text" name="address" class="form-control" data-validation="required text" id="inputAddress" placeholder="Address">
+                <div class="invalid-feedback"></div>
+            </div>
+        </div>
+        <!--Notes-->
+        <div class="form-group row">
+            <label for="inputTextarea1" class="col-sm-2 col-form-label">Notes</label>
+            <div class="col-sm-10">
+                <textarea name="textarea" class="form-control" id="inputTextarea1" rows="3"></textarea>
+            </div>
+        </div>
+        <!--Button-->
+        <div class="form-group row">
+            <div class="col-sm-10">
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+        </div>
+    </form>
+</div>
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+<!--my script-->
+<script src="plugin.js"></script>
+
+</body>
+</html>
